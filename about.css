@@ -1,0 +1,1285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link ul li a.active {
+    background-color: #24f2ef;
+  }
+
+body, html { 
+    height: 100%;
+    overflow: hidden;
+}
+
+.nav-link {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    padding-left: 450px;
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+}
+
+.nav-toggle i {
+    font-size: 2rem;
+}
+
+
+.nav-link ul{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    list-style: none;
+
+}
+
+
+.nav-link ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    padding: 5px 1rem;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-size: large;
+    letter-spacing: 3px;
+}
+
+.nav-link ul li a.active {
+    background-color: #24f2ef;
+}
+
+.banner{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    z-index: -1;
+    filter: blur(7px);
+}
+
+.section{
+    height: 100%;
+    width: 100%;
+    padding-top: 8.5rem;
+    display: flex;
+}
+
+.section .line{
+    width: 3px;
+    background-color: aqua;
+    height: 20em;
+    bottom: -3rem;
+    position: relative;
+    right: -6rem;
+}
+
+.image-about{
+    padding-left: 10rem;
+    padding-top: 1rem;
+    
+}
+
+.image-about img{
+    height: 310px;
+    width: 340px;
+    border: 2px solid rgb(97, 210, 230);
+    border-radius: 10rem;
+    transition: transform 1s all ease-in-out;
+    transition: transform 0.4s ease;
+  
+}
+
+.image-about img:hover{
+    transform: scale(1.09);
+}
+
+.university-info .degree{
+    font-size: 18px;
+}
+
+.university-info{
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.university-info p{
+    color: #fff;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 27px;
+}
+
+.info{
+    padding-left: 12rem;
+}
+
+.info p{
+    color: #fff;
+    border: 2.5px solid #fff;
+    border-radius: 1rem;
+    width: 30rem;
+    height: 26rem;
+    padding: 2rem 2rem;
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 5px 15px rgb(97, 210, 230);
+    background-color: rgb(4, 113, 133);
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -34rem;
+    left: .3rem;
+    width: 5rem;
+}
+
+.contacts a {
+    font-size: 36px;
+    padding-right: 10px;
+    padding: 2.57rem;
+    transition: transform 0.4s ease;
+}
+
+.contacts a:hover{
+    transform: scale(2);
+}
+
+.fa-facebook{
+    color: rgb(97, 210, 230);
+}
+
+.fa-github{
+    color: rgb(97, 210, 230);
+}
+
+.fa-envelope{
+    color: rgb(97, 210, 230);
+}
+
+.fa-instagram{
+    color: rgb(97, 210, 230);
+}
+
+button {
+    top: -5rem;
+    right: -63.1rem;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 800;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #fff;
+    color: rgb(97, 210, 230);
+    border: 2px solid rgb(97, 210, 230);
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 5px 15px aqua;
+}
+
+button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+button:hover span {
+    color: rgb(97, 210, 230);
+}
+
+button::before,
+button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+button::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+button:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+.persue{
+    top: -6.5rem;
+    position: relative;
+}
+
+.persue h3{
+    color: aqua;
+    font-size: 1.2rem;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    bottom: -4rem;
+    position: relative;
+}
+
+.persue p {
+    display: flex;
+    justify-content: center;
+    color: aqua;
+    font-size: 1.1rem;
+    position: relative;
+    bottom: -4rem;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 3px;
+    margin-left: 26%;
+    bottom: -5rem;
+    margin-right: 37%;
+}
+
+/* ============================================================================================ */
+
+@media screen and (max-width:325px) {
+
+    body, html {
+        height: 1100px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+
+    .nav-link ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 3.5rem;
+        left: 0;
+        background-color: rgba(0, 0, 0, 2);
+        height: 1000px
+    }
+
+    .nav-link {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        padding-top: 4rem;
+       
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .nav-link ul {
+        flex-direction: column;
+        gap: 1rem;
+        display: none;
+    }
+
+    .nav-link ul.active {
+        display: flex;
+    }
+
+    .nav-link.active {
+        background-color: black;
+    }
+
+    .banner {
+        position: fixed;
+    }
+
+    .section {
+        padding-top: 6rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .section .line{
+        width: 3px;
+        background-color: aqua;
+        height: 20em;
+        bottom: -3rem;
+        position: relative;
+        right: -6rem;
+        display: none;
+    }
+    
+    .image-about{
+        padding-left: 4px;
+        padding-right: 1px;
+        padding-top: 1rem;
+        
+    }
+    
+    .image-about img{
+        height:220px ;
+        width: 240px;
+        border: 3px solid rgb(97, 210, 230);
+        border-radius: 23rem;
+        transition: transform 1s all ease-in-out;
+        transition: transform 0.4s ease;
+        margin-left: 10px;
+    
+      
+    }
+    
+    .image-about img:hover{
+        transform: scale(1.09);
+    }
+
+    
+    .university-info .degree{
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    
+    .university-info{
+        padding-top: 1rem;
+        text-align: center;
+    }
+    
+    .university-info p{
+        color: #fff;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 27px;
+    }
+    
+    .info{
+        padding-left: 4px;
+    }
+    
+    .info p{
+
+        margin-top: 34px;
+        color: #fff;
+        border: 2.5px solid #fff;
+        border-radius: 1rem;
+        width: 15rem;
+        height: 11rem;
+        overflow-y: scroll;
+        padding: 3rem 0.9rem;
+        text-align: center;
+        font-size: 17px;
+        letter-spacing: 1px;
+        font-weight: 200;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 0px 5px 15px rgb(97, 210, 230);
+        background-color: rgb(4, 113, 133);
+    }
+    
+    .contacts{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: -2rem;
+        left: 0rem;
+        width: 2rem;
+    }
+    
+    .contacts a {
+        font-size: 10px;
+        padding-right: 15px;
+        padding: 0rem;
+        transition: transform 0.4s ease;
+    }
+    
+    .contacts a:hover{
+        transform: scale(2);
+    }
+    
+    .fa-facebook{
+        color: rgb(97, 210, 230);
+    }
+    
+    .fa-github{
+        color: rgb(97, 210, 230);
+    }
+    
+    .fa-envelope{
+        color: rgb(97, 210, 230);
+    }
+    
+    .fa-instagram{
+        color: rgb(97, 210, 230);
+    }
+    
+    button {
+        top: -1.3rem;
+        right: -8.4rem;
+        outline: none;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        margin: 0;
+        font-family: inherit;
+        font-size: inherit;
+        display: inline-block;
+        letter-spacing: 0.05rem;
+        font-weight: 80;
+        font-size: 15px;
+        border-radius: 80px;
+        overflow: hidden;
+        background: #fff;
+        color: rgb(97, 210, 230);
+        border: 2px solid rgb(97, 210, 230);
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 0px 5px 15px aqua;
+    }
+    
+    button span {
+        position: relative;
+        z-index: 10;
+        transition: color 0.4s;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 600;
+    }
+    
+    button:hover span {
+        color: rgb(97, 210, 230);
+    }
+    
+    button::before,
+    button::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+    }
+    
+    button::before {
+        content: "";
+        background: #000;
+        width: 120%;
+        left: -10%;
+        transform: skew(30deg);
+        transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    }
+    
+    button:hover::before {
+        transform: translate3d(100%, 0, 0);
+    }
+    
+    .persue{
+        top: -6.5rem;
+        position: relative;
+    }
+    
+    
+    .persue p {
+     
+        font-size: 0.8rem;
+        bottom: -15rem;
+        font-family: 'Roboto Serif', sans-serif;
+        top: 190px;
+        margin-left: 3px; 
+        bottom: 0;
+        margin-right: 0;
+
+        
+    }
+    
+    
+}
+
+@media screen and (max-width:375px) {
+
+    body, html {
+        height: 1100px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+
+    .nav-link ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 3.5rem;
+        left: 0;
+        background-color: rgba(0, 0, 0, 2);
+        height: 1000px
+    }
+
+    .nav-link {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        padding-top: 4rem;
+       
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .nav-link ul {
+        flex-direction: column;
+        gap: 1rem;
+        display: none;
+    }
+
+    .nav-link ul.active {
+        display: flex;
+    }
+
+    .nav-link.active {
+        background-color: black;
+    }
+
+    .banner {
+        position: fixed;
+    }
+
+    .section {
+        padding-top: 6rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .section .line{
+        width: 3px;
+        background-color: aqua;
+        height: 20em;
+        bottom: -3rem;
+        position: relative;
+        right: -6rem;
+        display: none;
+    }
+    
+    .image-about{
+        padding-left: 4px;
+        padding-right: 1px;
+        padding-top: 1rem;
+        
+    }
+    
+    .image-about img{
+        height:220px ;
+        width: 240px;
+        border: 3px solid rgb(97, 210, 230);
+        border-radius: 23rem;
+        transition: transform 1s all ease-in-out;
+        transition: transform 0.4s ease;
+        margin-left: 10px;
+    
+      
+    }
+    
+    .image-about img:hover{
+        transform: scale(1.09);
+    }
+
+    
+    .university-info .degree{
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    
+    .university-info{
+        padding-top: 1rem;
+        text-align: center;
+    }
+    
+    .university-info p{
+        color: #fff;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 27px;
+    }
+    
+    .info{
+        padding-left: 4px;
+    }
+    
+    .info p{
+
+        margin-top: 34px;
+        color: #fff;
+        border: 2.5px solid #fff;
+        border-radius: 1rem;
+        width: 15rem;
+        height: 11rem;
+        overflow-y: scroll;
+        padding: 3rem 0.9rem;
+        text-align: center;
+        font-size: 17px;
+        letter-spacing: 1px;
+        font-weight: 200;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 0px 5px 15px rgb(97, 210, 230);
+        background-color: rgb(4, 113, 133);
+    }
+    
+    .contacts{
+        display: flex;
+        flex-direction: row;
+        position: unset;
+        top: -2rem;
+        left: 0rem;
+        width: 4rem;
+    }
+    
+    .contacts a {
+        font-size: 28px;
+        padding-left: 20px;
+        padding: 1.5rem;
+        transition: transform 0.4s ease;
+    }
+    
+    .contacts a:hover{
+        transform: scale(2);
+    }
+    
+    .fa-facebook{
+        color: rgb(97, 210, 230);
+    }
+    
+    .fa-github{
+        color: rgb(97, 210, 230);
+    }
+    
+    .fa-envelope{
+        color: rgb(97, 210, 230);
+    }
+    
+    .fa-instagram{
+        color: rgb(97, 210, 230);
+    }
+    
+    button {
+        top: -1.3rem;
+        right: -8.4rem;
+        outline: none;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        margin: 0;
+        font-family: inherit;
+        font-size: inherit;
+        display: inline-block;
+        letter-spacing: 0.05rem;
+        font-weight: 80;
+        font-size: 15px;
+        border-radius: 80px;
+        overflow: hidden;
+        background: #fff;
+        color: rgb(97, 210, 230);
+        border: 2px solid rgb(97, 210, 230);
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 0px 5px 15px aqua;
+    }
+    
+    button span {
+        position: unset;
+        z-index: 10;
+        transition: color 0.4s;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 600;
+    }
+    
+    button:hover span {
+        color: rgb(97, 210, 230);
+    }
+    
+    button::before,
+    button::after {
+        position: unset;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+    }
+    
+    button::before {
+        content: "";
+        background: #000;
+        width: 120%;
+        left: -10%;
+        transform: skew(30deg);
+        transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    }
+    
+    button:hover::before {
+        transform: translate3d(100%, 0, 0);
+    }
+    
+    .persue{
+        top: -6.5rem;
+        position: relative;
+    }
+    
+    
+    .persue p {
+     
+        font-size: 0.8rem;
+        bottom: -15rem;
+        font-family: 'Roboto Serif', sans-serif;
+        top: 190px;
+        margin-left: 3px; 
+        bottom: 0;
+        margin-right: 0;
+
+        
+    }
+    
+    
+}
+
+@media screen and (max-width:425px) {
+
+    body, html {
+        height: 1100px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+
+    .nav-link ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 3.5rem;
+        left: 0;
+        background-color: rgba(0, 0, 0, 2);
+        height: 1000px
+    }
+
+    .nav-link {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        padding-top: 4rem;
+       
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .nav-link ul {
+        flex-direction: column;
+        gap: 1rem;
+        display: none;
+    }
+
+    .nav-link ul.active {
+        display: flex;
+    }
+
+    .nav-link.active {
+        background-color: black;
+    }
+
+    .banner {
+        position: fixed;
+    }
+
+    .section {
+        padding-top: 6rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .section .line{
+        width: 3px;
+        background-color: aqua;
+        height: 20em;
+        bottom: -3rem;
+        position: relative;
+        right: -6rem;
+        display: none;
+    }
+    
+    .image-about{
+        padding-left: 4px;
+        padding-right: 1px;
+        padding-top: 1rem;
+        
+    }
+    
+    .image-about img{
+        height:220px ;
+        width: 240px;
+        border: 3px solid rgb(97, 210, 230);
+        border-radius: 23rem;
+        transition: transform 1s all ease-in-out;
+        transition: transform 0.4s ease;
+        margin-left: 10px;
+    
+      
+    }
+    
+    .image-about img:hover{
+        transform: scale(1.09);
+    }
+
+    
+    .university-info .degree{
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    
+    .university-info{
+        padding-top: 1rem;
+        text-align: center;
+    }
+    
+    .university-info p{
+        color: #fff;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 27px;
+    }
+    
+    .info{
+        padding-left: 4px;
+    }
+    
+    .info p{
+
+        margin-top: 34px;
+        color: #fff;
+        border: 2.5px solid #fff;
+        border-radius: 1rem;
+        width: 15rem;
+        height: 11rem;
+        overflow-y: scroll;
+        padding: 3rem 0.9rem;
+        text-align: center;
+        font-size: 17px;
+        letter-spacing: 1px;
+        font-weight: 200;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 0px 5px 15px rgb(97, 210, 230);
+        background-color: rgb(4, 113, 133);
+    }
+    
+    .contacts{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: -2rem;
+        left: 2.5rem;
+        width: 5rem;
+    }
+    
+    .contacts a {
+        font-size: 28px;
+        padding-left: 20px;
+        padding: 1.5rem;
+        transition: transform 0.4s ease;
+    }
+    
+    .contacts a:hover{
+        transform: scale(2);
+    }
+    
+    .fa-facebook{
+        color: rgb(97, 210, 230);
+    }
+    
+    .fa-github{
+        color: rgb(97, 210, 230);
+    }
+    
+    .fa-envelope{
+        color: rgb(97, 210, 230);
+    }
+    
+    .fa-instagram{
+        color: rgb(97, 210, 230);
+    }
+    
+    button {
+        top: -1.3rem;
+        right: -8.4rem;
+        outline: none;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        margin: 0;
+        font-family: inherit;
+        font-size: inherit;
+        display: inline-block;
+        letter-spacing: 0.05rem;
+        font-weight: 80;
+        font-size: 15px;
+        border-radius: 80px;
+        overflow: hidden;
+        background: #fff;
+        color: rgb(97, 210, 230);
+        border: 2px solid rgb(97, 210, 230);
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 0px 5px 15px aqua;
+    }
+    
+    button span {
+        position: unset;
+        z-index: 10;
+        transition: color 0.4s;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 600;
+    }
+    
+    button:hover span {
+        color: rgb(97, 210, 230);
+    }
+    
+    button::before,
+    button::after {
+        position: unset;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+    }
+    
+    button::before {
+        content: "";
+        background: #000;
+        width: 120%;
+        left: -10%;
+        transform: skew(30deg);
+        transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    }
+    
+    button:hover::before {
+        transform: translate3d(100%, 0, 0);
+    }
+    
+    .persue{
+        top: -6.5rem;
+        position: relative;
+    }
+    
+    
+    .persue p {
+     
+        font-size: 0.8rem;
+        bottom: -15rem;
+        font-family: 'Roboto Serif', sans-serif;
+        top: 190px;
+        margin-left: 3px; 
+        bottom: 0;
+        margin-right: 0;
+
+        
+    }
+    
+    
+}
+
+@media screen and (max-width:445px) {
+
+    body, html {
+        height: 1100px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+
+    .nav-link ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 3.5rem;
+        left: 0;
+        background-color: rgba(0, 0, 0, 2);
+        height: 1000px
+    }
+
+    .nav-link {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        padding-top: 4rem;
+       
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .nav-link ul {
+        flex-direction: column;
+        gap: 1rem;
+        display: none;
+    }
+
+    .nav-link ul.active {
+        display: flex;
+    }
+
+    .nav-link.active {
+        background-color: black;
+    }
+
+    .banner {
+        position: fixed;
+    }
+
+    .section {
+        padding-top: 6rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .section .line{
+        width: 3px;
+        background-color: aqua;
+        height: 20em;
+        bottom: -3rem;
+        position: relative;
+        right: -6rem;
+        display: none;
+    }
+    
+    .image-about{
+        padding-left: 4px;
+        padding-right: 1px;
+        padding-top: 1rem;
+        
+    }
+    
+    .image-about img{
+        height:220px ;
+        width: 240px;
+        border: 3px solid rgb(97, 210, 230);
+        border-radius: 23rem;
+        transition: transform 1s all ease-in-out;
+        transition: transform 0.4s ease;
+        margin-left: 10px;
+    
+      
+    }
+    
+    .image-about img:hover{
+        transform: scale(1.09);
+    }
+
+    
+    .university-info .degree{
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    
+    .university-info{
+        padding-top: 1rem;
+        text-align: center;
+    }
+    
+    .university-info p{
+        color: #fff;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 27px;
+    }
+    
+    .info{
+        padding-left: 4px;
+    }
+    
+    .info p{
+
+        margin-top: 34px;
+        color: #fff;
+        border: 2.5px solid #fff;
+        border-radius: 1rem;
+        width: 15rem;
+        height: 11rem;
+        overflow-y: scroll;
+        padding: 3rem 0.9rem;
+        text-align: center;
+        font-size: 17px;
+        letter-spacing: 1px;
+        font-weight: 200;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 0px 5px 15px rgb(97, 210, 230);
+        background-color: rgb(4, 113, 133);
+    }
+    
+    .contacts{
+        display: flex;
+        flex-direction: row;
+        position: unsets;
+        top: -2rem;
+        left: 3.5rem;
+        width: 5rem;
+    }
+    
+    .contacts a {
+        font-size: 28px;
+        padding-left: 20px;
+        padding: 1.5rem;
+        transition: transform 0.4s ease;
+    }
+    
+    .contacts a:hover{
+        transform: scale(2);
+    }
+    
+    .fa-facebook{
+        color: rgb(97, 210, 230);
+    }
+    
+    .fa-github{
+        color: rgb(97, 210, 230);
+    }
+    
+    .fa-envelope{
+        color: rgb(97, 210, 230);
+    }
+    
+    .fa-instagram{
+        color: rgb(97, 210, 230);
+    }
+    
+    button {
+        top: -1.3rem;
+        right: -8.4rem;
+        outline: none;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        margin: 0;
+        font-family: inherit;
+        font-size: inherit;
+        display: inline-block;
+        letter-spacing: 0.05rem;
+        font-weight: 80;
+        font-size: 15px;
+        border-radius: 80px;
+        overflow: hidden;
+        background: #fff;
+        color: rgb(97, 210, 230);
+        border: 2px solid rgb(97, 210, 230);
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 0px 5px 15px aqua;
+    }
+    
+    button span {
+        position: relative;
+        z-index: 10;
+        transition: color 0.4s;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 600;
+    }
+    
+    button:hover span {
+        color: rgb(97, 210, 230);
+    }
+    
+    button::before,
+    button::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+    }
+    
+    button::before {
+        content: "";
+        background: #000;
+        width: 120%;
+        left: -10%;
+        transform: skew(30deg);
+        transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    }
+    
+    button:hover::before {
+        transform: translate3d(100%, 0, 0);
+    }
+    
+    .persue{
+        top: -6.5rem;
+        position: relative;
+    }
+    
+    
+    .persue p {
+     
+        font-size: 0.8rem;
+        bottom: -15rem;
+        font-family: 'Roboto Serif', sans-serif;
+        top: 190px;
+        margin-left: 3px; 
+        bottom: 0;
+        margin-right: 0;
+
+        
+    }
+    
+    
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/6f861a9eb6.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <div class="banner" style="background-image: url('./images/pxfuel.png');" ></div>
+         
+        <nav class="nav-link" id="nav-link">
+            <div class="nav-toggle" id="nav-toggle"><i class="fas fa-bars"></i></div>
+            <ul class="nav-menu" id="nav-menu">
+                <li data-aos="fade-down" data-aos-delay="300" data-aos-duration="400"><a href="index.html" >Home</a></li>
+                <li data-aos="fade-down" data-aos-delay="400" data-aos-duration="500"><a href="about.html" class="active">About</a></li>
+                <li data-aos="fade-down" data-aos-delay="500" data-aos-duration="600"><a href="skills.html">Skills</a></li>
+                <li data-aos="fade-down" data-aos-delay="600" data-aos-duration="700"><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+        
+        <div class="section">
+            <div class="image-about"
+                data-aos="fade-left"
+                data-aos-delay="500"
+                data-aos-duration="600">
+                <img src="./images/IMG_1119.jpg" alt="">
+                <div class="university-info"
+                    data-aos="fade-left"
+                    data-aos-delay="700"
+                    data-aos-duration="800">
+                    <p class="degree">Bsc.(hons) Software Engineering (Stage 1)</p>
+                    <p>NSBM Green University</p>
+                    <p class="degree">Bsc.(hons) Software Engineering (Stage 2-3)</p>
+                    <p>University Of Plymouth UK</p>
+                </div>
+            </div>
+            <div class="line"
+                data-aos="fade-left"
+                data-aos-delay="600"
+                data-aos-duration="700"></div>
+            <div class="info"
+                data-aos="fade-left"
+                data-aos-delay="700"
+                data-aos-duration="800">
+               <p>Hello, I'm Iresh Udayanga, an undergraduate student majoring in Software Engineering. With a strong 
+                foundation in HTML, CSS, JavaScript, C#, Python, Java, Dart, and C, I am well-versed in 
+                various programming languages. I have hands-on experience with frameworks and libraries 
+                like ASP.NET and Flutter and am currently advancing my skills in React.js.
+                My keen eye for design and user experience helps me develop websites and applications 
+                that are not only visually appealing but also highly user-friendly. I am adept at web 
+                performance optimization to ensure fast load times and a seamless user experience. 
+                My proficiency in version control systems such as Git allows for efficient collaboration and 
+                project management. I am eager to leverage my technical expertise, creativity, and meticulous attention to detail to contribute effectively to a forward-thinking and innovative team.</p>
+            </div>
+        </div>
+        <a href="https://www.linkedin.com/in/iresh-udayanga-b5aa54187/" target="_blank">
+            <button
+                data-aos="fade-left" 
+                data-aos-delay="800"
+                data-aos-duration="800">
+                <span>More</span>
+            </button>
+        </a>
+        <div class="persue"
+                data-aos="zoom-in"
+                data-aos-delay="600"
+                data-aos-duration="700">
+                <p>&copy; 2024 Iresh Udayanga. All rights reserved.</p>
+        </div>
+        <div class="contacts">
+            <a href="https://web.facebook.com/profile.php?id=100087376796817"><i class="fa-brands fa-facebook"
+                data-aos="fade-right"
+                data-aos-delay="300"
+                data-aos-duration="400"></i></a>
+            <a href="https://github.com/Ireshudayanga"><i class="fa-brands fa-github"
+                data-aos="fade-right"
+                data-aos-delay="400"
+                data-aos-duration="500"></i></a>
+            <a href="mailto:ireshudayanga23976@gmail.com"><i class="fa-regular fa-envelope"
+                data-aos="fade-right"
+                data-aos-delay="500"
+                data-aos-duration="600"></i></a>
+            <a href="https://www.instagram.com/itzme__ireya?igsh=MTJ5am05bWdpaDkxMQ%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"
+                data-aos="fade-right"
+                data-aos-delay="600"
+                data-aos-duration="700"></i></a>
+        </div>
+    </div>
+</body>
+
+<script>
+    AOS.init();
+
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    const navLink = document.querySelector('.nav-link'); 
+
+    navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    navLink.classList.toggle('active'); 
+});
+</script>
+</html>

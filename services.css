@@ -1,0 +1,1377 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+}
+.nav-link {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    padding-left: 450px;
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+}
+
+.nav-toggle i {
+    font-size: 2rem;
+}
+
+
+.nav-link ul{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    list-style: none;
+
+}
+
+
+.nav-link ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    padding: 5px 1rem;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-size: large;
+    letter-spacing: 3px;
+}
+
+.nav-link ul li a.active {
+    background-color: #24f2ef;
+}
+
+
+.banner{
+height: 100vh;
+width: 100%;
+position: absolute;
+background-size: cover;
+top: 0;
+z-index: -1;
+}
+
+.section{
+    width: 100%;
+    height: 100%;
+    padding-top: 8rem;
+    display: flex;
+    justify-content: center;
+        }
+    
+    
+    .tables{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 0 15rem;
+    }
+    
+        .tables .table-1{
+            background-color: rgb(4, 113, 133);
+            box-shadow: 0px 5px 15px rgb(97, 210, 230);
+            padding: 2rem 2rem;
+            border: 2.5px solid #fff;
+            border-radius: 1rem;
+            height: 10rem;
+            width: 17rem;
+            transition: scale .5s all ease-in-out;
+        }
+    
+        .tables .table-1:hover{
+            scale: 1.1;
+        }
+    
+        .table-1 .head{
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: -1rem;
+        }
+    
+        .table-1 .details{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+    
+        .tables .table-2{
+            background-color: rgb(4, 113, 133);
+            box-shadow: 0px 5px 15px rgb(97, 210, 230);
+            padding: 2rem 2rem;
+            border: 2.5px solid #fff;
+            border-radius: 1rem;
+            height: 10rem;
+            width: 17rem;
+            transition: scale .5s all ease-in-out;
+        }
+    
+        .tables .table-2:hover{
+            scale: 1.1;
+        }
+    
+        .table-2 .head{
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: -1rem;
+        }
+    
+        .table-2 .details{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+    
+        .tables .table-3{
+            background-color: rgb(4, 113, 133);
+            box-shadow: 0px 5px 15px rgb(97, 210, 230);
+            padding: 2rem 2rem;
+            border: 2.5px solid #fff;
+            border-radius: 1rem;
+            height: 10rem;
+            width: 17rem;
+            transition: scale .5s all ease-in-out;
+        }
+    
+        .tables .table-3:hover{
+            scale: 1.1;
+        }
+    
+        .table-3 .head{
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: -1rem;
+        }
+    
+        .table-3 .details{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+    
+        .tables .table-4{
+            background-color: rgb(4, 113, 133);
+            box-shadow: 0px 5px 15px rgb(97, 210, 230);
+            padding: 2rem 2rem;
+            border: 2.5px solid #fff;
+            border-radius: 1rem;
+            height: 10rem;
+            width: 17rem;
+            transition: scale .5s all ease-in-out;
+        }
+    
+        .tables .table-4:hover{
+            scale: 1.1;
+        }
+    
+        .table-4 .head{
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: -1rem;
+        }
+    
+        .table-4 .details{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        .contacts{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -31.7rem;
+        left: .3rem;
+        width: 5rem;
+    }
+
+.contacts a {
+    font-size: 36px;
+    padding-right: 10px;
+    padding: 2.57rem;
+    transition: transform 0.4s ease;
+}
+
+.contacts a:hover{
+    transform: scale(2);
+}
+
+.fa-facebook{
+    color: rgb(97, 210, 230);
+}
+
+.fa-github{
+    color: rgb(97, 210, 230);
+}
+
+.fa-envelope{
+    color: rgb(97, 210, 230);
+}
+
+.fa-instagram{
+    color: rgb(97, 210, 230);
+}
+
+
+/* =================================================================================================================== */
+
+@media screen and (max-width:320px) {
+
+    body, html {
+        height: 800px;
+        overflow: scroll;
+        height: 1400px;
+        overflow-x: hidden;
+       
+       
+    }
+
+
+    .nav-link ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 3.5rem;
+        left: 0;
+        background-color: rgba(0, 0, 0, 2);
+        height: 1000px
+    }
+
+    .nav-link {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        padding-top: 4rem;
+       
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .nav-link ul {
+        flex-direction: column;
+        gap: 1rem;
+        display: none;
+    }
+
+    .nav-link ul.active {
+        display: flex;
+    }
+
+    .nav-link.active {
+        background-color: black;
+    }
+
+    .banner {
+        position: fixed;
+        filter: blur(5px);
+    }
+
+    .section {
+        padding-top: 6rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+      
+    
+    .tables{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap:nowrap;
+        gap: 2rem;
+        padding: 4rem 0rem;
+       
+        width: 100%;
+        
+       
+    }
+    
+        .tables .table-1{
+            
+            background-color: rgb(4, 113, 133);
+            box-shadow: 0px 5px 15px rgb(97, 210, 230);
+            padding: 2rem 0rem;
+            border: 2.5px solid #fff;
+            border-radius: 1rem;
+            width: 200px;
+            height: auto;
+            transition: scale .5s all ease-in-out;
+
+            
+        }
+    
+        .tables .table-1:hover{
+            scale: 1.1;
+        }
+    
+        .table-1 .head{
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: -1rem;
+        }
+    
+        .table-1 .details{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+    
+        .tables .table-2{
+            
+            background-color: rgb(4, 113, 133);
+            box-shadow: 0px 5px 15px rgb(97, 210, 230);
+            padding: 2rem 2rem;
+            border: 2.5px solid #fff;
+            border-radius: 1rem;
+            width: 200px;
+            height: auto;
+            transition: scale .5s all ease-in-out;
+        }
+    
+        .tables .table-2:hover{
+            scale: 1.1;
+        }
+    
+        .table-2 .head{
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: -1rem;
+        }
+    
+        .table-2 .details{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+    
+        .tables .table-3{
+           
+            background-color: rgb(4, 113, 133);
+            box-shadow: 0px 5px 15px rgb(97, 210, 230);
+            padding: 2rem 2rem;
+            border: 2.5px solid #fff;
+            border-radius: 1rem;
+            width: 200px;
+            height: auto;
+            overflow-y: scroll;
+            transition: scale .5s all ease-in-out;
+        }
+    
+        .tables .table-3:hover{
+            scale: 1.1;
+        }
+    
+        .table-3 .head{
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: -1rem;
+        }
+    
+        .table-3 .details{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+    
+        .tables .table-4{
+           
+            background-color: rgb(4, 113, 133);
+            box-shadow: 0px 5px 15px rgb(97, 210, 230);
+            padding: 2rem 2rem;
+            border: 2.5px solid #fff;
+            border-radius: 1rem;
+            width: 200px;
+            height: auto;
+            transition: scale .5s all ease-in-out;
+        }
+    
+        .tables .table-4:hover{
+            scale: 1.1;
+        }
+    
+        .table-4 .head{
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: -1rem;
+        }
+    
+        .table-4 .details{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        .contacts{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: -1.7rem;
+        left: .3rem;
+        width: 5rem;
+    }
+
+.contacts a {
+    font-size: 26px;
+    padding-right: 5px;
+    padding: 2rem;
+    transition: transform 0.4s ease;
+}
+
+.contacts a:hover{
+    transform: scale(2);
+}
+
+.fa-facebook{
+    color: rgb(97, 210, 230);
+}
+
+.fa-github{
+    color: rgb(97, 210, 230);
+}
+
+.fa-envelope{
+    color: rgb(97, 210, 230);
+}
+
+.fa-instagram{
+    color: rgb(97, 210, 230);
+}
+    
+}
+
+
+@media screen and (max-width:375px) {
+
+    body, html {
+        height: 800px;
+        overflow: scroll;
+        height: 1400px;
+        overflow-x: hidden;
+       
+       
+    }
+
+
+    .nav-link ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 3.5rem;
+        left: 0;
+        background-color: rgba(0, 0, 0, 2);
+        height: 1000px
+    }
+
+    .nav-link {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        padding-top: 4rem;
+       
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .nav-link ul {
+        flex-direction: column;
+        gap: 1rem;
+        display: none;
+    }
+
+    .nav-link ul.active {
+        display: flex;
+    }
+
+    .nav-link.active {
+        background-color: black;
+    }
+
+    .banner {
+        position: fixed;
+        filter: blur(5px);
+    }
+
+    .section {
+        padding-top: 6rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+      
+    
+    .tables{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap:nowrap;
+        gap: 2rem;
+        padding: 4rem 15rem;
+       
+        width: 100%;
+        
+       
+    }
+    
+        .tables .table-1{
+            
+            background-color: rgb(4, 113, 133);
+            box-shadow: 0px 5px 15px rgb(97, 210, 230);
+            padding: 2rem 2rem;
+            border: 2.5px solid #fff;
+            border-radius: 1rem;
+            
+            transition: scale .5s all ease-in-out;
+
+            
+        }
+    
+        .tables .table-1:hover{
+            scale: 1.1;
+        }
+    
+        .table-1 .head{
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: -1rem;
+        }
+    
+        .table-1 .details{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+    
+        .tables .table-2{
+            
+            background-color: rgb(4, 113, 133);
+            box-shadow: 0px 5px 15px rgb(97, 210, 230);
+            padding: 2rem 2rem;
+            border: 2.5px solid #fff;
+            border-radius: 1rem;
+            
+            transition: scale .5s all ease-in-out;
+        }
+    
+        .tables .table-2:hover{
+            scale: 1.1;
+        }
+    
+        .table-2 .head{
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: -1rem;
+        }
+    
+        .table-2 .details{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+    
+        .tables .table-3{
+           
+            background-color: rgb(4, 113, 133);
+            box-shadow: 0px 5px 15px rgb(97, 210, 230);
+            padding: 2rem 2rem;
+            border: 2.5px solid #fff;
+            border-radius: 1rem;
+            height: 190px;
+            transition: scale .5s all ease-in-out;
+        }
+    
+        .tables .table-3:hover{
+            scale: 1.1;
+        }
+    
+        .table-3 .head{
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: -1rem;
+        }
+    
+        .table-3 .details{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+    
+        .tables .table-4{
+           
+            background-color: rgb(4, 113, 133);
+            box-shadow: 0px 5px 15px rgb(97, 210, 230);
+            padding: 2rem 2rem;
+            border: 2.5px solid #fff;
+            border-radius: 1rem;
+            
+            transition: scale .5s all ease-in-out;
+        }
+    
+        .tables .table-4:hover{
+            scale: 1.1;
+        }
+    
+        .table-4 .head{
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: -1rem;
+        }
+    
+        .table-4 .details{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        .contacts{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: -1.7rem;
+        left: .3rem;
+        width: 5rem;
+    }
+
+.contacts a {
+    font-size: 26px;
+    padding-right: 5px;
+    padding: 2rem;
+    transition: transform 0.4s ease;
+}
+
+.contacts a:hover{
+    transform: scale(2);
+}
+
+.fa-facebook{
+    color: rgb(97, 210, 230);
+}
+
+.fa-github{
+    color: rgb(97, 210, 230);
+}
+
+.fa-envelope{
+    color: rgb(97, 210, 230);
+}
+
+.fa-instagram{
+    color: rgb(97, 210, 230);
+}
+    
+}
+
+@media screen and (max-width:425px) {
+
+    body, html {
+        height: 800px;
+        overflow: scroll;
+        height: 1400px;
+        overflow-x: hidden;
+       
+       
+    }
+
+
+    .nav-link ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 3.5rem;
+        left: 0;
+        background-color: rgba(0, 0, 0, 2);
+        height: 1000px
+    }
+
+    .nav-link {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        padding-top: 4rem;
+       
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .nav-link ul {
+        flex-direction: column;
+        gap: 1rem;
+        display: none;
+    }
+
+    .nav-link ul.active {
+        display: flex;
+    }
+
+    .nav-link.active {
+        background-color: black;
+    }
+
+    .banner {
+        position: fixed;
+        filter: blur(5px);
+    }
+
+    .section {
+        padding-top: 6rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+      
+    
+    .tables{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap:nowrap;
+        gap: 2rem;
+        padding: 4rem 15rem;
+       
+        width: 100%;
+        
+       
+    }
+    
+        .tables .table-1{
+            
+            background-color: rgb(4, 113, 133);
+            box-shadow: 0px 5px 15px rgb(97, 210, 230);
+            padding: 2rem 2rem;
+            border: 2.5px solid #fff;
+            border-radius: 1rem;
+            
+            transition: scale .5s all ease-in-out;
+
+            
+        }
+    
+        .tables .table-1:hover{
+            scale: 1.1;
+        }
+    
+        .table-1 .head{
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: -1rem;
+        }
+    
+        .table-1 .details{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+    
+        .tables .table-2{
+            
+            background-color: rgb(4, 113, 133);
+            box-shadow: 0px 5px 15px rgb(97, 210, 230);
+            padding: 2rem 2rem;
+            border: 2.5px solid #fff;
+            border-radius: 1rem;
+            
+            transition: scale .5s all ease-in-out;
+        }
+    
+        .tables .table-2:hover{
+            scale: 1.1;
+        }
+    
+        .table-2 .head{
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: -1rem;
+        }
+    
+        .table-2 .details{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+    
+        .tables .table-3{
+           
+            background-color: rgb(4, 113, 133);
+            box-shadow: 0px 5px 15px rgb(97, 210, 230);
+            padding: 2rem 2rem;
+            border: 2.5px solid #fff;
+            border-radius: 1rem;
+           
+            transition: scale .5s all ease-in-out;
+        }
+    
+        .tables .table-3:hover{
+            scale: 1.1;
+        }
+    
+        .table-3 .head{
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: -1rem;
+        }
+    
+        .table-3 .details{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+    
+        .tables .table-4{
+           
+            background-color: rgb(4, 113, 133);
+            box-shadow: 0px 5px 15px rgb(97, 210, 230);
+            padding: 2rem 2rem;
+            border: 2.5px solid #fff;
+            border-radius: 1rem;
+            
+            transition: scale .5s all ease-in-out;
+        }
+    
+        .tables .table-4:hover{
+            scale: 1.1;
+        }
+    
+        .table-4 .head{
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: -1rem;
+        }
+    
+        .table-4 .details{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        .contacts{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: -1.7rem;
+        left: .3rem;
+        width: 5rem;
+        align-items: center;
+    }
+
+.contacts a {
+    font-size: 26px;
+    padding-right: 5px;
+    padding: 2rem;
+    transition: transform 0.4s ease;
+}
+
+.contacts a:hover{
+    transform: scale(2);
+}
+
+.fa-facebook{
+    color: rgb(97, 210, 230);
+}
+
+.fa-github{
+    color: rgb(97, 210, 230);
+}
+
+.fa-envelope{
+    color: rgb(97, 210, 230);
+}
+
+.fa-instagram{
+    color: rgb(97, 210, 230);
+}
+    
+}
+
+@media screen and (max-width:445px) {
+
+    body, html {
+        height: 800px;
+        overflow: scroll;
+        height: 1400px;
+        overflow-x: hidden;
+       
+       
+    }
+
+
+    .nav-link ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 3.5rem;
+        left: 0;
+        background-color: rgba(0, 0, 0, 2);
+        height: 1000px
+    }
+
+    .nav-link {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        padding-top: 4rem;
+       
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .nav-link ul {
+        flex-direction: column;
+        gap: 1rem;
+        display: none;
+    }
+
+    .nav-link ul.active {
+        display: flex;
+    }
+
+    .nav-link.active {
+        background-color: black;
+    }
+
+    .banner {
+        position: fixed;
+        filter: blur(5px);
+    }
+
+    .section {
+        padding-top: 6rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+      
+    
+    .tables{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap:nowrap;
+        gap: 2rem;
+        padding: 4rem 15rem;
+       
+        width: 100%;
+        
+       
+    }
+    
+        .tables .table-1{
+            
+            background-color: rgb(4, 113, 133);
+            box-shadow: 0px 5px 15px rgb(97, 210, 230);
+            padding: 2rem 2rem;
+            border: 2.5px solid #fff;
+            border-radius: 1rem;
+            
+            transition: scale .5s all ease-in-out;
+
+            
+        }
+    
+        .tables .table-1:hover{
+            scale: 1.1;
+        }
+    
+        .table-1 .head{
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: -1rem;
+        }
+    
+        .table-1 .details{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+    
+        .tables .table-2{
+            
+            background-color: rgb(4, 113, 133);
+            box-shadow: 0px 5px 15px rgb(97, 210, 230);
+            padding: 2rem 2rem;
+            border: 2.5px solid #fff;
+            border-radius: 1rem;
+            
+            transition: scale .5s all ease-in-out;
+        }
+    
+        .tables .table-2:hover{
+            scale: 1.1;
+        }
+    
+        .table-2 .head{
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: -1rem;
+        }
+    
+        .table-2 .details{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+    
+        .tables .table-3{
+           
+            background-color: rgb(4, 113, 133);
+            box-shadow: 0px 5px 15px rgb(97, 210, 230);
+            padding: 2rem 2rem;
+            border: 2.5px solid #fff;
+            border-radius: 1rem;
+           
+            transition: scale .5s all ease-in-out;
+        }
+    
+        .tables .table-3:hover{
+            scale: 1.1;
+        }
+    
+        .table-3 .head{
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: -1rem;
+        }
+    
+        .table-3 .details{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+    
+        .tables .table-4{
+           
+            background-color: rgb(4, 113, 133);
+            box-shadow: 0px 5px 15px rgb(97, 210, 230);
+            padding: 2rem 2rem;
+            border: 2.5px solid #fff;
+            border-radius: 1rem;
+            
+            transition: scale .5s all ease-in-out;
+        }
+    
+        .tables .table-4:hover{
+            scale: 1.1;
+        }
+    
+        .table-4 .head{
+            color: #fff;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: -1rem;
+        }
+    
+        .table-4 .details{
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+            font-weight: 200;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        .contacts{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: -1.7rem;
+        left: .3rem;
+        width: 5rem;
+        align-items: center;
+    }
+
+.contacts a {
+    font-size: 38px;
+    padding-right: 5px;
+    padding: 2rem;
+    transition: transform 0.4s ease;
+}
+
+.contacts a:hover{
+    transform: scale(2);
+}
+
+.fa-facebook{
+    color: rgb(97, 210, 230);
+}
+
+.fa-github{
+    color: rgb(97, 210, 230);
+}
+
+.fa-envelope{
+    color: rgb(97, 210, 230);
+}
+
+.fa-instagram{
+    color: rgb(97, 210, 230);
+}
+    
+}

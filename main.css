@@ -1,0 +1,956 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+body, html { 
+    height: 100%;
+    overflow: hidden;
+}
+
+.nav-link {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    padding-left: 450px;
+}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+}
+
+.nav-toggle i {
+    font-size: 2rem;
+}
+
+.nav-link ul {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-link ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    padding: 5px 1rem;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-size: large;
+    letter-spacing: 3px;
+}
+
+.nav-link ul li a.active {
+    background-color: #24f2ef;
+}
+
+.banner {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    z-index: -1;
+    filter: blur(7px);
+}
+
+.section {
+    padding-top: 20rem;
+    padding-left: 10rem;
+    display: flex;
+    position: relative;
+    gap: 5rem;
+    bottom: 4rem;
+}
+
+.img img {
+    height: 530px;
+    width: 730px;
+    max-width: 520px;
+    position: absolute;
+    top: -25.2rem;
+    left: 30.8rem;
+}
+
+.img svg {
+    position: absolute;
+    left: 33rem;
+    z-index: -1;
+    height: 34rem;
+    top: -26rem;
+}
+
+.interact-section {
+    position: relative;
+    transition: transform 500ms ease-in-out;
+}
+
+.interact-section .img svg:hover {
+    transform: scale(-20px);
+    cursor: pointer;
+}
+
+.intro {
+    right: 50%;
+}
+
+.intro h2 {
+    font-size: clamp(4rem, -0.625rem + 5.2vw, 3rem);
+    color: #fff;
+    position: relative;
+    top: -5rem;
+}
+
+.intro span {
+    color: rgb(97, 210, 230);
+    font-weight: bold;
+    font-size: clamp(1.5rem, 0.125rem + 4.4vw, 2.6rem);
+    letter-spacing: .2px;
+}
+
+.intro h4 {
+    color: #fff;
+    width: 30rem;
+    top: -4rem;
+    position: relative;
+    font-size: clamp(0.5rem, 0.1094rem + 1.25vw, 0.8125rem);
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+}
+
+.intro h1 {
+    animation: blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid #fff;
+    color: rgb(97, 210, 230);
+    font-size: 2.3rem;
+    position: relative;
+    top: -5rem;
+    margin-top: 11px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes erasing {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: rgb(186, 59, 59);
+    }
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -28rem;
+    left: 1rem;
+    width: 5rem;
+}
+
+.links a {
+    font-size: clamp(1.25rem, 0rem + 4vw, 2.25rem);
+    padding-right: 10px;
+    padding: 2.57rem;
+    transition: transform 0.4s ease;
+}
+
+.links a:hover {
+    transform: scale(2);
+}
+
+.fa-facebook {
+    color: rgb(97, 210, 230);
+}
+
+.fa-github {
+    color: rgb(97, 210, 230);
+}
+
+.fa-envelope {
+    color: rgb(97, 210, 230);
+}
+
+.fa-instagram {
+    color: rgb(97, 210, 230);
+}
+
+.persue h3 {
+    color: aqua;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right: 32%;
+    bottom: 5rem;
+}
+
+.persue p {
+    display: flex;
+    justify-content: center;
+    color: aqua;
+    font-size: 1.1rem;
+    position: relative;
+    bottom: -4rem;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 3px;
+    margin-right: 25%;
+    bottom: -1rem;
+    margin-right: 37%;
+}
+
+
+
+/* ================================================================================ */
+
+
+
+
+@media screen and (max-width: 320px) {
+
+    body, html {
+        height: 1000px;
+        overflow: scroll;
+    }
+
+
+    .nav-link ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 3.5rem;
+        left: 0;
+        background-color: rgba(0, 0, 0, 2);
+        height: 1000px
+    }
+
+    .nav-link {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        padding-top: 4rem;
+       
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .nav-link ul {
+        flex-direction: column;
+        gap: 1rem;
+        display: none;
+    }
+
+    .nav-link ul.active {
+        display: flex;
+    }
+
+    .nav-link.active {
+        background-color: black;
+    }
+    
+
+    .banner {
+        filter: blur(3px);
+    }
+
+    .section {
+        padding-top: 8rem;
+        padding-left: 0rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 350px;
+        }
+    }
+    
+    @keyframes erasing {
+        from {
+            width: 100%;
+        }
+        to {
+            width: 0;
+        }
+    }
+    
+    @keyframes blink {
+        50% {
+            border-color: rgb(186, 59, 59);
+        }
+    }
+
+    .img img{
+        margin-left:auto;
+        top: 25px;
+        right: 50px;
+        width: 350px;
+        height: auto;
+        position: unset;
+        margin-top: 20px;
+        margin-right: 49px;
+    }
+
+    .img svg {
+        left: auto;
+        bottom:20px;
+        right: 20px;
+        top: 19px;
+        width: 350px;
+        height: auto;
+
+    }
+
+    .intro {
+        right: auto;
+        text-align: center;
+        
+    }
+
+    .intro h2 {
+        font-size: 2rem;
+        top: 0;
+        position: static;
+        
+    }
+
+    .intro h1 {
+        font-size: 18px;
+        top: 0;
+        margin-left: 80px;
+        left: 10px;
+    }
+
+    .intro h4 {
+        font-size: 13px;
+        width: auto;
+        top: 0;
+        padding-top: 30px;
+        position:unset;
+        padding-left: 100px ;
+        padding-right: 100px ;
+        
+    }
+
+    .links {
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 95%;
+        top: -120px;
+    }
+
+    .links a {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+        margin-top:1rem;
+        margin-left: 12px;
+
+    }
+
+    .persue h3 {
+        font-size: 15px;
+        line-height: 25px;
+        left: 5px;
+        bottom: 0;
+        top: 70px;
+        padding-right: 30px;
+        display:unset;
+    }
+
+    .persue p {
+        font-size: 0.8rem;
+        margin-right: 0;
+        bottom: 0;
+        top: 130px;
+    }
+
+    .banner{
+        position: fixed;
+    }
+}   
+
+
+
+@media screen and (max-width: 375px) {
+
+    body, html {
+        height: 1000px;
+        overflow: scroll;
+    }
+
+
+    .nav-link ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 3.5rem;
+        left: 0;
+        background-color: rgba(0, 0, 0, 2);
+        height: 1000px
+    }
+
+    .nav-link {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        padding-top: 4rem;
+       
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .nav-link ul {
+        flex-direction: column;
+        gap: 1rem;
+        display: none;
+    }
+
+    .nav-link ul.active {
+        display: flex;
+    }
+
+    .nav-link.active {
+        background-color: black;
+    }
+    
+
+    .banner {
+        filter: blur(3px);
+    }
+
+    .section {
+        padding-top: 8rem;
+        padding-left: 0rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 350px;
+        }
+    }
+    
+    @keyframes erasing {
+        from {
+            width: 100%;
+        }
+        to {
+            width: 0;
+        }
+    }
+    
+    @keyframes blink {
+        50% {
+            border-color: rgb(186, 59, 59);
+        }
+    }
+
+
+
+    .img img{
+        margin-left:auto;
+        top: 25px;
+        right: 50px;
+        width: 350px;
+        height: auto;
+        position: unset;
+        margin-top: 20px;
+        margin-right: 49px;
+    }
+
+    
+    .img svg {
+        left: auto;
+        right: 20px;
+        top: 900px;
+        width: 350px;
+        height: auto;
+       
+        
+    }
+
+    
+
+    .intro {
+        right: auto;
+        text-align: center;
+        
+    }
+
+    .intro h2 {
+        font-size: 2rem;
+        top: 0;
+        position: static;
+        
+    }
+
+    .intro h1 {
+        font-size: 18px;
+        top: 0;
+        margin-left: 30px;
+        left: 10px;
+    }
+
+    .intro h4 {
+        font-size: 13px;
+        width: auto;
+        top: 0;
+        padding-top: 30px;
+        position:unset;
+        padding-left: 35px ;
+        padding-right: 35px ;
+        
+    }
+
+    .links {
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 95%;
+        top: -120px;
+    }
+
+    .links a {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+        margin-top:1rem;
+        margin-left: 12px;
+
+    }
+
+    .persue h3 {
+        font-size: 15px;
+        line-height: 25px;
+        left: 85px;
+        bottom: 0;
+        top: 70px;
+    }
+
+    .persue p {
+        font-size: 0.8rem;
+        margin-right: 0;
+        bottom: 0;
+        top: 130px;
+    }
+
+    .banner{
+        position: fixed;
+    }
+}  
+
+ @media screen and (max-width: 425px) {
+
+    body, html {
+        height: 1000px;
+        overflow: scroll;
+    }
+
+
+    .nav-link ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 3.5rem;
+        left: 0;
+        background-color: rgba(0, 0, 0, 2);
+        height: 1000px
+    }
+
+    .nav-link {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        padding-top: 4rem;
+       
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .nav-link ul {
+        flex-direction: column;
+        gap: 1rem;
+        display: none;
+    }
+
+    .nav-link ul.active {
+        display: flex;
+    }
+
+    .nav-link.active {
+        background-color: black;
+    }
+    
+
+    .banner {
+        filter: blur(3px);
+    }
+
+    .section {
+        padding-top: 8rem;
+        padding-left: 0rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 350px;
+        }
+    }
+    
+    @keyframes erasing {
+        from {
+            width: 100%;
+        }
+        to {
+            width: 0;
+        }
+    }
+    
+    @keyframes blink {
+        50% {
+            border-color: rgb(186, 59, 59);
+        }
+    }
+
+    .img img{
+        margin-left:auto;
+        top: 25px;
+        right: 50px;
+        width: 350px;
+        height: auto;
+        position: unset;
+        margin-top: 20px;
+        margin-right: 49px;
+    }
+
+    .img svg {
+        left: auto;
+        bottom:20px;
+        right: 22px;
+        top: 19px;
+        width: 350px;
+        height: auto;
+       
+    }
+
+    .intro {
+        right: auto;
+        text-align: center;
+        
+    }
+
+    .intro h2 {
+        font-size: 2rem;
+        top: 0;
+        position: static;
+        
+    }
+
+    .intro h1 {
+        font-size: 18px;
+        top: 0;
+        margin-left: 30px;
+        left: 10px;
+    }
+
+    .intro h4 {
+        font-size: 13px;
+        width: auto;
+        top: 0;
+        padding-top: 30px;
+        position:unset;
+        padding-left: 35px ;
+        padding-right: 35px ;
+        
+    }
+
+    .links {
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 95%;
+        top: -120px;
+    }
+
+    .links a {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+        margin-top:1rem;
+        margin-left: 12px;
+
+    }
+
+    .persue h3 {
+        font-size: 15px;
+        line-height: 25px;
+        left: 85px;
+        bottom: 0;
+        top: 70px;
+        
+    }
+
+    .persue p {
+        font-size: 0.8rem;
+        margin-right: 0;
+        bottom: 0;
+        top: 130px;
+       
+    }
+
+    .banner{
+        position: fixed;
+    }
+}   
+
+
+@media screen and (max-width: 445px) {
+
+    body, html {
+        height: 1000px;
+        overflow: scroll;
+    }
+
+
+    .nav-link ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 3.5rem;
+        left: 0;
+        background-color: rgba(0, 0, 0, 2);
+        height: 1000px
+    }
+
+    .nav-link {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        padding-top: 4rem;
+       
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .nav-link ul {
+        flex-direction: column;
+        gap: 1rem;
+        display: none;
+    }
+
+    .nav-link ul.active {
+        display: flex;
+    }
+
+    .nav-link.active {
+        background-color: black;
+    }
+    
+
+    .banner {
+        filter: blur(3px);
+    }
+
+    .section {
+        padding-top: 8rem;
+        padding-left: 0rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 350px;
+        }
+    }
+    
+    @keyframes erasing {
+        from {
+            width: 100%;
+        }
+        to {
+            width: 0;
+        }
+    }
+    
+    @keyframes blink {
+        50% {
+            border-color: rgb(186, 59, 59);
+        }
+    }
+
+    .img img{
+        margin-left:auto;
+        top: 25px;
+        right: 50px;
+        width: 350px;
+        height: auto;
+        position: unset;
+        margin-top: 20px;
+        margin-right: 49px;
+    }
+
+    .img svg {
+        left: auto;
+        bottom:20px;
+        right: 22px;
+        top: 19px;
+        width: 350px;
+        height: auto;
+       
+    }
+
+    .intro {
+        right: auto;
+        text-align: center;
+        
+    }
+
+    .intro h2 {
+        font-size: 2rem;
+        top: 0;
+        position: static;
+        
+    }
+
+    .intro h1 {
+        font-size: 18px;
+        top: 0;
+        margin-left: 30px;
+        left: 10px;
+    }
+
+    .intro h4 {
+        font-size: 13px;
+        width: auto;
+        top: 0;
+        padding-top: 30px;
+        position:unset;
+        padding-left: 35px ;
+        padding-right: 35px ;
+        
+    }
+
+    .links {
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 95%;
+        top: -120px;
+    }
+
+    .links a {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+        margin-top:1rem;
+        margin-left: 12px;
+
+    }
+
+    .persue h3 {
+        font-size: 15px;
+        line-height: 25px;
+        left: 85px;
+        bottom: 0;
+        top: 70px;
+        
+    }
+
+    .persue p {
+        font-size: 0.8rem;
+        margin-right: 0;
+        bottom: 0;
+        top: 130px;
+       
+    }
+
+    .banner{
+        position: fixed;
+    }
+} 
